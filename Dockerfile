@@ -5,3 +5,4 @@ WORKDIR /code
 RUN pip install pipenv
 RUN pipenv install --system
 COPY . /code/
+ENTRYPOINT [ "bash", "entrypoint.sh" ]
