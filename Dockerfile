@@ -1,8 +1,8 @@
 FROM python:3.8
 ENV PYTHONUNBUFFERED 1
+RUN pip install pipenv
 COPY Pipfile* /code/
 WORKDIR /code
-RUN pip install pipenv
 RUN pipenv install --system
 COPY . /code/
 ENTRYPOINT [ "bash", "entrypoint.sh" ]
