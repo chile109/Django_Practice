@@ -14,7 +14,7 @@ def hello_world(request):
     )
 
 def home(request: HttpRequest):
-    jokes = [jokekappa.get_joke()["content"] for i in range(10)]
+    jokes = [jokekappa.get_joke()["content"] for i in range(9)]
         
     return render(request, 'home.html', {
         'joke': jokes,
