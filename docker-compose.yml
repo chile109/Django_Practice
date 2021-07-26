@@ -18,6 +18,8 @@ services:
       - .:/code
     ports:
       - "8000:8000"
+    environment:
+      - DATABASE_URL=postgres://postgres:postgres@db:5432/postgres
 
 volumes:
   postgres-data:
