@@ -1,0 +1,7 @@
+- model: myapp.post
+  pk: 100
+  fields:
+    title: my title
+    content: some content
+    photo: https://i.imgur.com/vtXlbLV.jpg
+    location: my loc
